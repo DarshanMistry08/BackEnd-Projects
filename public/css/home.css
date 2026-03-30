@@ -6,7 +6,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Animated grid background */
 body::before {
     content: "";
     position: fixed;
@@ -24,7 +23,6 @@ body::before {
     100% { transform: translate(-40px, -40px); }
 }
 
-/* Title */
 h1 {
     text-align: center;
     margin-top: 30px;
@@ -33,14 +31,12 @@ h1 {
     text-shadow: 0 0 10px #00ffcc;
 }
 
-/* Container */
 .container {
     max-width: 900px;
     margin: 30px auto;
     padding: 20px;
 }
 
-/* Form (terminal style) */
 .form-box {
     border: 1px solid #00ffcc;
     padding: 20px;
@@ -50,7 +46,7 @@ h1 {
     background: rgba(0, 255, 204, 0.03);
 }
 
-/* Input */
+
 .form-box input {
     flex: 1;
     padding: 10px;
@@ -60,7 +56,6 @@ h1 {
     outline: none;
 }
 
-/* Button */
 .form-box button {
     padding: 10px 15px;
     background: transparent;
@@ -76,7 +71,6 @@ h1 {
     box-shadow: 0 0 10px #00ffcc;
 }
 
-/* Table */
 .table-box {
     margin-top: 25px;
     border: 1px solid #00ffcc;
@@ -84,7 +78,6 @@ h1 {
     overflow: hidden;
 }
 
-/* Table styles */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -103,19 +96,16 @@ tr {
     border-top: 1px solid rgba(0,255,204,0.2);
 }
 
-/* Hover effect */
 tr:hover {
     background: rgba(0,255,204,0.05);
 }
 
-/* Click badge */
 .badge {
     border: 1px solid #00ffcc;
     padding: 4px 10px;
     border-radius: 20px;
 }
 
-/* Empty */
 .empty {
     text-align: center;
     padding: 40px;

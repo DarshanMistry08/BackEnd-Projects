@@ -9,7 +9,6 @@ body {
     align-items: center;
 }
 
-/* Title */
 h1 {
     position: absolute;
     top: 40px;
@@ -17,7 +16,6 @@ h1 {
     font-weight: 600;
 }
 
-/* Card */
 form {
     background: #ffffff;
     padding: 35px;
@@ -28,14 +26,12 @@ form {
     flex-direction: column;
 }
 
-/* Labels */
 label {
     font-size: 13px;
     margin-bottom: 5px;
     color: #555;
 }
 
-/* Inputs */
 input {
     padding: 11px;
     margin-bottom: 18px;
@@ -46,13 +42,11 @@ input {
     font-size: 14px;
 }
 
-/* Focus */
 input:focus {
     border-color: #4f46e5;
     box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
 }
 
-/* Button */
 button {
     padding: 11px;
     border: none;
@@ -64,12 +58,10 @@ button {
     transition: 0.3s;
 }
 
-/* Hover */
 button:hover {
     opacity: 0.9;
 }
 
-/* Small screens */
 @media (max-width: 400px) {
     form {
         width: 90%;
