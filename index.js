@@ -7,6 +7,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const path = require('path');
+app.use(express.static(path.join(__dirname, 'public')));
 const { conenctToMongodb } = require('./connenct');
 const URL = require('./models/url.model');
 const staticRoute = require('./routes/static.route');
