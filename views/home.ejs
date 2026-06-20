@@ -37,7 +37,9 @@
                                 <%= index +1 %>
                             </td>
                             <td>
-                                <%= url.ShortId %>
+                                <!-- Additional -->
+                                <a href="http://localhost:3000/url/<%= url.ShortId %>"><%= url.ShortId %></a>
+                                
                             </td>
                             <td>
                                 <%= url.redirectURL %>
