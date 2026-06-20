@@ -2,7 +2,6 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -16,7 +15,6 @@ const userRoute = require('./routes/user.route');
 const cookieParser = require('cookie-parser');
 const { restricToLoggedinUserOnly } = require("./middlewares/auth")
 
-
 conenctToMongodb()
   .then(() => console.log("connected"))
   .catch(() => console.log("DB Error"));
@@ -26,8 +24,6 @@ app.set('views', path.resolve("./views"));
 
 app.use(express.json());
 app.use(cookieParser());
-
-
 
 app.use("/user", userRoute);   // login, signup
 app.use("/", restricToLoggedinUserOnly, staticRoute);     // FOR home, login page
