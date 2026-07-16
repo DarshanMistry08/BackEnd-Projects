@@ -53,6 +53,9 @@ button {
     border-radius: 8px;
     background: linear-gradient(135deg, #4f46e5, #7c3aed);
     color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     font-weight: 500;
     cursor: pointer;
     transition: 0.3s;
@@ -61,7 +64,14 @@ button {
 button:hover {
     opacity: 0.9;
 }
-
+a {
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 15px;
+}
 @media (max-width: 400px) {
     form {
         width: 90%;

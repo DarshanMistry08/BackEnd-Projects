@@ -5,18 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Page</title>
-<link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 
 <body>
     <h1>URl-Shortener</h1>
 
-
     <div>
         <form action="/url" method="POST">
             <input style="width: 30%; margin-left: 2%; height: 25px;" type="text" name="url" placeholder="Enter URL" />
-            <button style="height: 30px;" type="submit">Generate</button>
+            <div class="btn">
 
+                <button style="height: 30px;" type="submit">Generate</button>
+                <a style="height: 30px;" href="#"
+                    onclick="window.location.replace('http://localhost:3000/user/logout'); return false;">
+                    Logout
+                </a>
+            </div>
 
         </form>
 
@@ -26,7 +31,7 @@
             <table>
                 <thead>
                     <th>S.no</th>
-                    <th>ShortID</th>
+                    <th style="display: flex; justify-content: center;" >ShortID</th>
                     <th>RedirectURL</th>
                     <th>Click</th>
                 </thead>
@@ -38,8 +43,10 @@
                             </td>
                             <td>
                                 <!-- Additional -->
-                                <a href="http://localhost:3000/url/<%= url.ShortId %>"><%= url.ShortId %></a>
-                                
+                                <a target="_blank" href="http://localhost:3000/url/<%= url.ShortId %>">
+                                    <%= url.ShortId %>
+                                </a>
+
                             </td>
                             <td>
                                 <%= url.redirectURL %>
